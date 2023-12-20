@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Yeni Ürün Ekleme";
+}
+<div class="d-flex justify-content-center">
+    <form class="col-10" type="POST" action="/Home/SaveProduct">
+        <div class="col-8">
+            <div class="form-group">
+                <label>Adi</label>
+                <input type="text" class="form-control"  name="Name">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün Adı</small>
+            </div>
+            <div class="form-group">
+                <label>Resim</label>
+                <input type="text" class="form-control" name="ImageUrl">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün resimi</small>
+            </div>
+            <div class="form-group">
+                <label>Kategori</label>
+                <input type="number" min="0" max="10" class="form-control" name="CategoryId">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün Kategorisi</small>
+            </div>
+            <div class="form-group">
+                <label>Fiyat</label>
+                <input type="number" step="1" class="form-control"  name="Price">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün Fiyatı</small>
+            </div>
+            <div class="form-group">
+                <label>Adet</label>
+                <input type="number" step="1" class="form-control"  name="Piece">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün Fiyatı</small>
+            </div>
+            <div class="form-group">
+                <label>Stars</label>
+                <input type="number" step="1" class="form-control"  name="Stars">
+                <small class="form-text text-muted">Eklenmek istenenen ürünün popülaritesi</small>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Ekle</button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,6 +1,6 @@
 namespace OnlineStoreApp_2.Models
 {
-    public class UrunModel
+    public class ProductModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -9,5 +9,7 @@ namespace OnlineStoreApp_2.Models
         public int Stars { get; set; }
         //Stok
         public int Piece { get; set; }
+
+        public int CategoryId { get; set; }
     }
 }
